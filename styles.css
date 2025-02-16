@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Merienda+One&family=Oleo+Script&display&family=Mallanna&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Home Page */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #75CB56;
+    padding: 15px 30px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.logo strong {
+    font-family: 'Jomhuria', cursive;
+    font-size: 34px;
+}
+
+.logo span {
+    font-family: 'Oleo Script', cursive;
+    font-size: 22px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 26px;
+    font-family: 'Merienda One', cursive;
+    color: black;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 300px 20px;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/6388cede7af9c63eced1c785/037b7d10-38bd-43d5-b758-9639fb8aaa23/studio-apri-salon.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-family: 'Merienda One', cursive;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn {
+    grid-column: span 2;
+    background-color: #75CB56;
+    color: black;
+    font-size: 20px;
+    font-family: 'Mallanna', sans-serif;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #4c9737;
+}
+
+/* Service Page */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #D4E8D2;
+    min-height: 100vh;
+}
+
+.services h1 {
+    font-family: 'Merienda One', cursive;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.service {
+    background: #f5faf4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service h2 {
+    font-family: 'Merienda One', cursive;
+    font-size: 1.8em;
+}
+
+.service ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service ul li {
+    margin: 5px 0;
+}
+
+.service p, .service ul li {
+    font-family: 'Mallanna', sans-serif;
+    font-size: 1.0em;
+}
+
+.photo-placeholder {
+    width: 100%;
+    height: 200px;
+    background: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Jomhuria', sans-serif;
+    font-size: 3em;
+    color: black;
+}
+
+/* Location Page */
+.location-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #D4E8D2;
+    min-height: 100vh;
+}
+
+.location-title {
+    font-family: 'Merienda One', cursive;
+    font-size: 2.5em;
+}
+
+.location-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.location-item {
+    font-family: 'Merienda One', cursive;
+}
+
+.location-item p {
+    font-family: 'Mallanna', sans-serif;
+    font-size: 1.2em;
+}
+
+.building-photo {
+    background: white;
+    padding: 200px;
+    margin: 30px auto;
+    width: 60%;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Jomhuria', cursive;
+    font-size: 2em;
+}
+
+/* Experts Page */
+.experts {
+    background-color: #D4E8D2;
+    padding: 50px 20px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.experts-title {
+    font-family: 'Merienda One', cursive;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.experts-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.expert {
+    background: #f5faf4;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.photo {
+    width: 100%;
+    height: 200px;
+    background: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Jomhuria', cursive;
+    font-size: 2.5em;
+    color: black;
+    font-weight: bold;
+}
+
+.expert h2 {
+    font-family: 'Mallanna', sans-serif;
+    font-size: 1.8em;
+    margin: 10px 0;
+    color: black;
+}
+
+
+.expert p {
+    font-family: 'Mallanna', sans-serif;
+    font-size: 1.2em;
+    margin-top: 5px;
+    color: black; 
+}
+
+/* Booking Page */
+.booking {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #D4E8D2;
+    min-height: 100vh;
+}
+
+.booking h1 {
+    font-family: 'Merienda One', cursive;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.booking-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-family: 'Mallanna', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    padding: 10px;
+    font-size: 1em;
+    font-family: 'Mallanna', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.btn {
+    grid-column: span 2;
+    background-color: #75CB56;
+    color: black;
+    font-size: 20px;
+    font-family: 'Mallanna', sans-serif;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+/* Confirmation Page */
+.confirmation {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #D4E8D2;
+    min-height: 100vh;
+}
+
+.confirmation h1 {
+    font-family: 'Merienda One', cursive;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.confirmation p {
+    font-family: 'Mallanna', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
